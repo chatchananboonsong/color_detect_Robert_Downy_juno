@@ -10,8 +10,7 @@
 color_detect/
 │
 ├── 🚀 โปรแกรมหลัก (Main Programs)
-│   ├── color_target_auto_infrared.py   # [แนะนำ] ระบบล็อกเป้าและยิงอินฟราเรดอัตโนมัติตามลำดับ (Auto-Fire IR)
-│   ├── color_target_switch_pid.py      # ระบบเล็งและยิงกระสุนเจลจริงแบบกดยืนยัน (Manual Confirmation)
+│   ├── color_target_auto_infrared.py   # ระบบล็อกเป้าและยิงอินฟราเรดอัตโนมัติตามลำดับ 
 │   └── hsv_color_tuner.py              # เครื่องมือจูนค่าสี HSV แบบเรียลไทม์ผ่าน Trackbar
 │
 ├── 📊 เครื่องมือวิเคราะห์ผล (Analysis & Visualization)
@@ -71,4 +70,17 @@ cd .\color_detect_Robert_Downy_juno\
 ```powershell
 pip install robomaster
 pip install matplotlib
+```
+### 3) รันโค้ดบันทึกข้อมูลจาก RoboMaster
+
+```powershell
+python color_target_auto_infrared.py
+```
+
+### 4) รันสคริปต์เพื่อแสดงกราฟ
+
+หลังจากมีไฟล์ CSV แล้ว ให้รัน:
+
+```powershell
+python plot_shooting_response.py
 ```
